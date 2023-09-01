@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Streaming Test</title>
+  </head>
+  <body>
+    <h1>Video Streaming Test</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480" />
+    <br /><br />
+    <form action="/capture_frame" method="post">
+      <input type="submit" value="Capture" />
+    </form>
+  </body>
+</html>
